@@ -1,0 +1,7 @@
+<% form_for :object, :url => to_path do |f|%>
+
+<%= f.text_field :some_attribute, :value =>123%>
+<%= f.text_field :some_other_attribute,:value => 456%>
+Profile: <input type="checkbox" name="profile" value="true"/>
+<%= f.submit %>
+<% end %>
